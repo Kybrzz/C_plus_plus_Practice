@@ -1,0 +1,61 @@
+0: Preface 
+- amalgamates sections 0.3 - 0.5 
+
+1. History 
+- C was the progamming lang b4 c++ 
+- C was developed by Dennis Ritchie 
+- C++ was developed by Bjarne Stroustrup as an extension to c
+- ISO committee = international standard for organization
+- C nd C++'s underlying philo: 
+    * trust the programmer 
+
+2. C++ Queries  
+- what is C++ used 4?:
+    * video games 
+    * real-time systems 
+    * finances 
+    * office suite 
+    * embedded software 
+    * AI 
+- how r c++ programs developed? 
+    a) define problem to solve 
+    b) contrive a logical and methodical solution 
+    c) type a prog that implements the solution 
+    d) compile the program 
+    e) link object files 
+    f) test the program 
+    g) debug
+    h) repeat d-g 
+
+3. Key Terms Related to Development of C++ Prog 
+- linker = compiles all object files nd produces a desired 
+output file
+- linking = process of a linker running 
+- library files = collections of precompiled code for reuse
+- object file = an intermediate file named .o or .obj 
+
+4. Libraries 
+- c++ standard library 
+- optional to link third party libraries 
+- possible to link nd cre8 ur own; discussed in appendix 
+
+5. Building 
+- building = the process of converting source code files 
+into an executable 
+- build (n) = a specific executable file produced as the
+result of building
+- build automation tools (e.g., make, build2)
+
+6. Testing and IDEs
+- testing = the process of assessing whether ur software
+functions as expected 
+debugging = identifying nd correcting programming errors
+- IDEs (integrated development environment)
+r software programs that collectively include:
+    * editors
+    * compiler 
+    * linker 
+    * debugger 
+- acknowledge: 
+    * 0.6 is ab IDEs nd selecting one 2 use, for
+    own reasons i decided to use VSC w/ mingw64

@@ -1,0 +1,26 @@
+1. Self-Preface 
+- learning here is based off 'learcpp.com' tutorial
+- start date: 9/18/2025 // September 18th, 2025 
+- code will be created to parallel written info correspondent
+to website 
+- ? accompaniement of .txt correspondent to each lesson? 
+- below is where i begin synthesizing info, beginning w/
+the 'Goals' section of the webpage 
+
+2. Goals
+- cover general programming topics (incidentals)  
+- cover C++ 
+- will understand how to AND how NOT TO program in C++ 
+- provide examples for u to follow along to 
+- have fun
+
+3. Optimizing Learning from Tutorial 
+- type in the examples 
+- solve ur own problems b4 asking others immediately 
+- learn to utilize a 'debugger'
+- modify examples to understand calibration responses 
+- focus is to understand concepts 
+- type ur own programs using the concepts uv learned 
+
+4. Lastly..
+- disable ad blockr bc it's an ad-supported site..done 

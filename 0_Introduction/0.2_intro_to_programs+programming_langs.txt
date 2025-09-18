@@ -1,0 +1,68 @@
+1. Skim of Key Terms
+- computer program
+- programming language 
+- programming 
+- exectuing 
+- launch/run/execute 
+- hardware 
+- components of hardware: 
+    * CPU 
+    * memory 
+    * interactive devices 
+    * storage devices
+- software 
+- platform 
+- portable = a program that is easily transferred from one 
+platform to another 
+- porting = the act of modifying a program intending it to
+be ran on a diff platform 
+
+2. Skim of Programming Language Key Terms 
+- machine language/machine code 
+- instruction set = the exhaustive set of machine lang 
+instruction that a particular CPU can comprehend 
+- binary digit/bit = an indy 1 or 0 
+- CPU family 
+- assembly language/assembly = human-readable programming lang
+- assembler = translation from assembly to machine 
+- compiler = a program(s) that reads source code nd transl8s
+it to a low-level lang 
+- executable file 
+interpreter = a program that directly executes source code
+instructions w/o requiring compilation first 
+- cross-platform 
+
+3. Key Takeaways
+- CPUs do not understand assembly, so assembly programs must
+be transl8ed into machine lang b4 execution is possible 
+
+4. Low v. High-Level Langs
+- ll: 
+    * e.g., machine langs, assembly langs 
+    * tailored to the instruction set program is ran on 
+    * downsides: 
+        a) not portable; unmotile 
+        b) diff to understand 
+        c) diff to type 
+    * benefits:
+        a) quick 
+- hl: 
+    * e.g., c++, python 
+    * downsides: 
+        a) must be transl8d b4 able to be run via compiler 
+        or interpreter 
+    * benefits: 
+        a) stores instructions in random memory 
+        b) does not require programmers to know exhaustively
+        about the platform it will be written on 
+        c) ez to type nd comprehend
+        d) include additional capabilities facilitating more
+        efficient programming tasks (e.g., loops) 
+- on c++
+    * now described as a mid-level lang, when juxtaposed w/ 
+    newer programming langs (e.g. scripting langs) 
+
+5. Tutorial Structure 
+a) rule: instructions mandated by lang - n-n
+b) best practice: recommended or idiomatic 
+c) warning: do not do; - n-n

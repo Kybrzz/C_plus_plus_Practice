@@ -1,0 +1,35 @@
+// launch.json purpose: build + run under debugger in one key (f5) 
+/* controls for representing output:
+    * f5 = build + run w/ debugger 
+        a) use for breakpoints, step-thru, nd variable watch
+    * ctrl + f5 = build + run w/o debugger 
+        a) use to c output quickly 
+    * ctrl + shift + b = build
+        a) use to compile/build only, w/o running it 
+*/
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug current .exe", // shows in the Run & Debug menu
+            "type": "cppdbg", // C/C++ debug adapter (GDB/LLDB)
+            "request": "launch", // start the program (vs. attach)
+            "program": "${fileDirname}\\app.exe", // exe built by your task; edited 'app'
+            "cwd": "${fileDirname}", // working directory for the program
+            "args": [], // CLI args to pass to your program
+            "stopAtEntry": false, // don't pause at main()
+            "externalConsole": false, // use VS Code integrated terminal
+            "MIMode": "gdb", // talk to GDB via MI
+            "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe", // your GDB path
+            "preLaunchTask": "C/C++: Build (Debug)", // auto-build with your Debug task
+            "internalConsoleOptions": "neverOpen", // ? -> prevents debug console from "stealing focus" ?
+            "setupCommands": [ // nicer variable printing in GDB
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
