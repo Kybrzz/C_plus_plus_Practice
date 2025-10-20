@@ -1,0 +1,112 @@
+===1.6: Unitialized Variables nd Undefined Behavior=== 
+
+1. Preliminary Info
+- unitialized vars = obj neither initialized nor assigned
+- initialized = obj is given a known value @ point of definition
+- assignment = obj is given a known value beyond point of definitin
+- why to avoid using unitialized vars? 
+	* results in defined behavior
+- what is undefined behavior? 
+	* the result of executing cod not specifically defined by the c++ lang
+	** result can be nearly anything, including a result that does behave correctly
+	
+===1.7: Keywords nd Naming Identifiers===
+
+1. Tabular From of all C++ Keywords
+- rf img for ^  
+	* "C:\Users\k1ngr\OneDrive\Documents\GitHub\C_plus_plus_Practice\1_C++_Basics\1_Imgs\C++_Keywords.png"
+
+2. Identifier Naming BPs (Best Practices)
+- recall an identifier = name of a var, func, etc. 
+- bp's: 
+	* begin w/ lowercase letter 
+	** snake_case (e.g., my_function_name) --> optimal 
+- match others' code norms if u r working on a project together
+
+===1.8: Whitespace nd Fundamental Formatting===
+
+1. Preliminary Info 
+- whitespace = chars used 4 formatting purposes, specifically
+spaces, tabs, nd newlines 
+- what is whitespace used 4?
+	* seperating certain lang elements
+	** inside text 
+	*** formatting code 
+- c++ is a whitespace-independent lang
+- optimal style for func. readability: 
+	* int  main () 
+	{ 
+		// statement here
+		return 0; 
+	} 
+- keep lines to <80 chars 
+- utilize the same style the tutorial uses as it is optimized for success
+
+===1.9: Intro to Literals nd Operators===
+- literal/literal constant = fixed value inserted directly into source code
+	* e.g, std::cout << 5; (literal constant)
+	** e.g., std::cout << x; (var) 
+- operation = a process involving zero or more input values that produces a new value
+- operands = input values used in operations
+- operator = specific operation to b performed denoted w/ this symbol 
+- return value = output of an operation
+- unary operators = act on one operand 
+	* e.g., -5 
+- binary operators = act on two operands 
+	* e.g., 5 + 5
+- ternary operators = act on three operands
+	* e.g., conditional op
+- nullary operators = act on zero operands
+	* e.g., throw op (operator)
+- side effect: an operator or func containg an observable effect beyond 
+producing a return value 
+
+===1.10: Intro to Expressions===
+- expression = a non-empty sequence of literals, vars, ops, nd func calls that computes a value
+- evaluation = process of executing an expression 
+- result/return value = resultant value produced of expression
+- expression statement = a statement that consists of an expression followed by a semicolon
+	* e.g., x = 5; 
+- subexpression = an expression used as an operand
+- full expression = an expression not a subexpression 
+- compound expression = an expression containing two r more uses of operators 
+
+===Bonus: Clarification on Ints. v. Floating-Point Numbers===
+
+1. Two Overarching Categories of Numbers in C++
+
+a) integers -> non-decimal #s  
+	* int
+	** long 
+	*** short 
+b) floating-point -> decimal/fractional #s 
+	* float 
+	** double 
+	*** long double 
+
+2. Division Behavior 
+
+a) Int / Int = Int 
+- C++ truncates, not rounds, the fraction since ints cannot have decimals
+- e.g., 
+	int a{7};
+	int b{8}; 
+	int result = a / b; 
+	// result is 0 
+
+b) Floating / floating = floating 
+- C++ keeps the fractional component 
+- e.g., 
+	double c{6};
+	double d{8.1};
+	double result = c / d; 
+	// result is 0.74....
+	
+c) Hybrid Types
+- if one operand is double nd the other is int..the int is automatically promoted to double
+resulting in a floating-point result 
+- e.g., 
+	int e{23}; 
+	double f{4.2}; 
+	auto result = e / f; 
+	// result is 5.476...

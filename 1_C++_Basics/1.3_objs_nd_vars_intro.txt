@@ -1,0 +1,39 @@
+===1.3: Intro to Objects nd Variables===
+
+1. Random Access Memory
+- RAM/Random Access Memory
+    * where the os loads the program (rf run time step 6) 
+
+2. Objects nd Variables
+- in c++, direct memory access is discouraged; memory is insterad accessed indirectly via an 'object'
+- object = a region of storage that contains a value and possess associated properties 
+- variable = an obj w/ a name
+- every var contains:
+    * identifier
+    * type
+    * value 
+    * + more (not pertinent 2 this lesson) 
+- allocaiton = the process of reserving storage for an obj's use 
+
+3. Data Types 
+- data type = determines what kind of value an obj will store 
+- best practice:
+    * avoid defining multiple variables of the same type in a single statement,
+    even tho the lang permits u to do so 
+    * instead, use a single-line comment w/ each var defined in a seperate statement 
+
+4. Quiz
+a) what is data?
+    * encoded info
+b) what is a value?
+    * the stored property of a var or obj THAT CAN BE REPRESENTED AS DATA
+3) what is an obj? 
+    * a region of storage that contains a value nd possesses associated properties
+4) what is a var? 
+    * a named object, containing an identifier, type, nd value 
+5) what is an identifier? 
+    * the name that a var is accessed by
+6) what is a data type used for? 
+    * to determine nd specify the type of value an obj stores
+7) what is an int? 
+    * a whole number not containing any decimal or fraction components 

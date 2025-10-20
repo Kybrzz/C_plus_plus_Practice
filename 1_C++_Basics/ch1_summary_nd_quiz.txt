@@ -1,0 +1,20 @@
+===Chapter 1 Summary nd Quiz===
+
+1. Chapter Review 
+- statement = type of instruction that causes program to perform action, terminated w/ a semicolon
+- func = collection of statements that execute sequentially
+- identifier = name of a function, object, etc. 
+- syntax = rules that govern how elements of programming r constructed
+- syntax error = occurs when u violate the grammatical rules of the language 
+- comments = allow programmer to leave annotations in the code; two types of comments
+- data = any mutabale and storable info 
+- value = single fragment of data 
+- var = named piece of memeory that we can use to store values 
+- definition statement = statement creating var 
+- data type = tells compiler how to interpret a piece of data into a sig value
+- difference between endl; and "\n": 
+	* endl; = outputs a newline char + flushes any pending output to console
+	** \n = outputs a newline char + lets system decide when to flush output 
+- BPs: 
+	* primary: focus on getting code functioning 
+	** secondary: optimizing

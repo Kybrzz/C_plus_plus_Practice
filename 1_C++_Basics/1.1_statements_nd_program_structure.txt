@@ -1,0 +1,39 @@
+===1.1: Statements nd Program Structure===
+
+1. introduction 
+- myriad of c++ topics to introduce, will only introduce topics
+@ superifical level 
+
+2. statements 
+- computer program: a sequence of instructions that direct a comp
+what to do 
+- statement: a type of instruction that causes a program to execute
+some action 
+- acknowledge: 
+    * nearly all statements in c++ end in a semicolon 
+- types of statements:
+    a) declaration (statements)
+    b) jump
+    c) expression 
+    d) compound 
+    e) selection/conditional 
+    f) iteration/loop
+    g) try blocks 
+
+3. functions 
+- statements r often grouped into units termed 'functions' (func(s)) 
+- func = a collection of statments that r exectued sequentially
+- acknowledge:
+    * all(?) c++ programs must have a special func named "main"
+    * when "main" is executed, the statements inside it r sequentially performed
+    * funcs r often titled correlating to a particular task/action
+    * common nomenclature is to append a pair of parenthesis
+    to the end of the func's name (e.g., main()) 
+        a) purpose is to differentiate it from other similar obj names
+- identifier = name of a function 
+
+4. characters (chars) nd text 
+- char = a written symbol or mark (e.g., 1, d, .) 
+- string = a sequence of chars 
+- control char = chars w/ no displayable output but still
+producing an effect (e.g., tab, space) 
