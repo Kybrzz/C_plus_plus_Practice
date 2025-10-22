@@ -1,0 +1,135 @@
+===2.5: Introduction to Local Scope===
+1. Key Terms
+- local vars = vars exisiting only inside the body of a func 
+	* contrasted from 'global vars'
+	** stored on the 'stack' by default 
+	*** not automatically initialized
+	**** local fvars take precedence over a global var w/ the same name if inside
+	its scope (a func) 
+- global vars = vars existing thruout the entire program
+	* stored in the 'global/static memory' area
+	** automatically initialized to 0
+	*** minimize global use as it can make deubugging nd testing more difficult 
+	**** can be hidden by local vars of the same name
+- scope = when an identifier can b seen nd used within the source code
+- 'out of scope' = anywhere an identifier cannot be accessed within source code
+- 'going out of scope' = objects going out of scope @ the end of the scope in which the object was instantiated
+- BP regarding local vars:
+	* define them as close to their first use as practical 
+- when to use a func parameter v. local var:
+	* func param ... when the caller will pass in the initialization value as an argument
+	** local var ... otherwise
+- temporary obj/anonomyous obj = an unnamed obj used to hold a value needed 4 momentarily
+
+
+
+==== 2.6: Praxis nd Optimal Use of Funcs ====
+1. shtuff 
+- why use funcs instead of programming all code within main() func?
+	* organization
+	** reusability
+	*** testing
+	**** abstraction 
+- BPs regarding funcs 
+	* recurring statements -> turn into func
+	** code w/ established set of inputs nd outputs 
+	*** one task -> one task per func
+- refactoring = splitting a lengthy func into sub-functions 
+
+
+
+==== 2.7: Forward Declarations nd Definitions ====
+1. shtuff 
+- forward declaration = informs the compiler ab the existence of an indentifier b4 actually defining it
+- func declaration statement/func prototype 
+	* ex of func declaration 4 the 'add' func:
+		~ int add(int x, int y); 
+- BP regarding func decs:
+	* kepe the parameter names within ur func declarations 
+- praxis of forward decs? = inform compiler typically of a func defined in a different .cpp file
+- declaration v. definition:
+	* dec = informs compiler ab the existence of an identifier, often from another .cpp file
+	** def = a dec that implements the identifer 
+- ODR (One Definition Rule) = a rule w/ three components:
+	* one def per scope 
+	** within a program, each func or var in a given scope can only have one def
+	*** types, templates, inline funcs, nd inline vars r allowed to have duplic8 defs in diff files,
+	as long as each def is identical 
+	
+==== 2.8: Program w/ Multiple Code Files ====
+- pretty useless mostly j info regarding IDEs 
+
+
+
+==== 2.9: Naming Collisions nd an Introduction to Namespaces ====
+1. Key Terms
+- naming collision/naming conflict = the issue wherein two identical identifers r introduced into the same program
+in a way that the compiler and/or linker cannot distinguish them
+- namespace = smth that provides another type of scope region permitting u to 
+declare or define names inside of it 
+- namespace scope = a scope region 
+- global namespace/global scope = any name not defined within a class, func, or namespace
+- scope resolution operator = :: 
+- std::cout = the 'cout' that is declared in namespace 'std'
+- qualified name = when an identifer includes a namespace prefix 
+- using directive = directive permitting u to access the names ina namespace w/o using a namespace prefix
+
+==== 2.10: Intro to the Preprocessor ====
+1. Key Terms
+- preprocessing = a phrase occurring b4 compilation 
+- preprocessor = a program that modifies the txt of the .cpp file 
+- translation = the entire process of preprocessing, compiling, nd linking 
+- preprocessor directives/directives = instructions beginning w/ a '#' symbol, ending w/ a newline,
+instructing the preprocessor to perform certain text manipulation tasks
+- macro = a rule defining how input text is converted into replacement output text 
+	* BP to type them in all uppercase letters, w/ words seperate using underscores
+- conditional compilation preprocessor directives = preprocessor directives that allow u to specify under what conditions
+code will or will not compile 
+		* quintessence of conditional compilation: #if 0 and #endif, 
+		placed on the beginning of the line (#if 0) nd end of the line (#endif) of code 
+		that u want to exclude from compilation
+		** to temporarily re-enable code wrapped in this conditional compilation, switch the #if 0 to '#if 1'
+		
+		
+==== 2.11: Header Files ====
+- header files = files w/ a .h, .hpp extension, or no extension @ all
+- lots of BPs regarding these..u'll learn w/ experience 
+
+==== 2.12: Header Guards ====
+- header guard/include guard = mechanisms that r designed to ensure that the contents of a given header file are not 
+copied more than once into any single file, in order to prevent duplicate definitions
+- pragma = '#pragma once' is a preprocessor directive that ensures a header file isn't included repeatedly 
+
+==== 2.13: Tips on Devising your Early Programs ====
+1. Insights on Beginner Programming 
+- principles:
+	* devise a plan b4 actually coding
+	** follow below structure (2 nd 3) for programming 
+	*** keep programms simple to start 
+	**** add features gradually 
+	***** focus on one area @ a time 
+	****** test each code block as u progress
+	******* don't invest in perfecting early drafts of code 
+	******** optimize for maintability, not performance 
+
+2. Theoretical Approach for Outlining Program
+I) Define your objective 
+- compendiously verablize ur goal in max. 2 sentences 
+- frame it from user-facing perspective 
+II) Define requirements 
+- gather constraints and stipulations 
+- focused on the 'what'
+III) Define ur tools, targets, nd backup plan 
+- backup ur code 
+- this step is eventually replaced as u gain mastery 
+IV) Deconstruct problems into manageable steps 
+- continuoulsy deconstruct problems down into simpler ones until u arrive @ a phase where 
+each individual task is manageable, ideally trivial. 
+- alternatively, begin w/ a list of ez subtasks, nd gradually ascend the hierarchy until complete
+V) Determine how to correlate each task 
+- define the sequence of events that will be executed 
+
+3. Implementation Approach 4 Outlining ur Program 
+I) Comment what each func will perform 
+II) Implement each func 
+III) Test each func 

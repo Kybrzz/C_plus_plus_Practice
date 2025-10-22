@@ -58,4 +58,5 @@ r software programs that collectively include:
     * debugger 
 - acknowledge: 
     * 0.6 is ab IDEs nd selecting one 2 use, for
-    own reasons i decided to use VSC w/ mingw64
+    own reasons i decided to not use one, instead opting for 
+	notepad++ nd terminal usage 
