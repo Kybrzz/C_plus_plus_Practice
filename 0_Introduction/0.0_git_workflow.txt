@@ -1,0 +1,9 @@
+==== Instructions on how to push my work to GitHub ====
+
+1. Firstly open folder location in terminal.
+2. Run these cmds. 
+
+git status
+git add .
+git commit -m "your_msg_here."
+git push
