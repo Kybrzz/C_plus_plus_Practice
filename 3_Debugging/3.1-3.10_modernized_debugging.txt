@@ -1,0 +1,104 @@
+==== 3.1: Syntax nd Semantic Errors ====
+
+1. Modular Focus 
+a) successful programmer 
+b) learning to identify nd correct bugs 
+
+2. Key Takeaways
+- typical error categories:
+	* syntax errors
+	** semantic/logic errors 
+- syntax error = an error occuring when u type an invalid statement,
+as determined by the rules of the C++ lang. 
+- semantic error = an error occuring when a statement is syntactically valid,
+but either: 
+	* violates other rules of the lang.
+	** does not execute the intented action by the programmer 
+
+
+==== 3.2-3.10: The Modernized Debugging Process ====
+
+1. Modular Focus 
+a) explaining the six steps of the debugging process
+b) (on my own fruition), refine the 6-step debugging process for the modern programmer,
+incorporating AI and other tools w/o losing key skills 
+
+2. Original 6-Step Debugging Process 
+	I) Identify root cause of problem 
+	II) Understand why the issue occurs
+	III) Determine how to resolve the issue 
+	IV) Implement your fix
+	V) Retest program to ensure the issue is resolved properly
+	VI) Retest again to confirm no new issues appear 
+
+3. Modernized Debugging Protocol (Self-Created + Assisted w/ GPT) 
+	I) Foundational Principles
+		* prioritization order: (descending)
+				-- descending = listing items highest value to lowest
+				-- ascending = begins from lowest value/priority to highest 
+			a) correctness
+			b) clarity 
+			c) performance 
+		** modify one incremental component @ a time 
+		*** retest after each tweak/alteration 
+		**** form a hypothesis b4 searching for help 
+		***** never paste code snippet u cannot explain @ the line level
+		****** use official documentation in conjunction w/ AI 
+		******* treat AI as code review, not authority 
+		
+	II) Debugging Workflow (step 1 of 3)
+		A) Identify - reproduce the smallest failing case 
+		B) Observe - read the first compiler error nd runtime behavior
+		C) Hypothesize - type: 'expected x, y result, z reason' 
+		D) Inspect - use prints, asserts, and/or debugger to confirm
+		E) Modify - apply the smallest possible change
+		F) Verify - run sanitizers, recompile, nd test 
+		G) Postmortem - log what broke, why, nd how u fixed it, using 
+		date | issue | cause | fix | test added | lesson 
+	
+	III) Post-Debugging Workflow (using tailored assistance) ((step 2 of 3))
+		a) n-n rule
+			* require @ least two disparate soruces (e.g., doc + AI, post + AI)
+		b) internet search 
+			* query the exact error text and provide language version 
+		c) ask AI: 
+			* provide the minimal code nd the failing input
+			** request:
+				-- explanation
+				-- fix
+				-- why it failed 
+				-- how to test 
+				-- one-paragraph mechanism summary 
+		d) finalization steps
+			* add one new 'guard test' that attempts to break the fix
+			** write a succinct postmortem in a log using format:
+				date | issue | cause | fix | test added | lesson 
+	
+	IV) Human Verfication (step 3 of 3) 
+		1) Core Principle
+			* last step
+			** do not use until after completing both steps 1 nd 2
+			*** if both steps 1 nd 2 fail, use this
+		2) Peer/Mentor/Professional 
+			* send:
+				- minimal reproduction 
+					* a minimal reproduction/reproducible example = smallest self-contained program
+					that still demonstrates the bug, ideally isolating the fault in < 10 lines
+				- constraints
+				- hypothesis
+				- traeoffs considered
+				- what u tried 
+
+4. BPs Regarding Habits 
+	- keep a debug log w/: 
+		* date 
+		** issue
+		*** cause 
+		**** fix 
+		***** test added 
+		****** lesson 
+	- frequently skim one past log entry
+	- rf past log entries whenever encounter analogous or same error
+	- convert any bug into a < 10-line 'repro'
+	- always prefer empirical data from ur test experiments over opinions or copy-pasted code
+	- add one test per bug found
