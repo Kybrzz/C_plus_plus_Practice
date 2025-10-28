@@ -1,0 +1,7 @@
+==== 4.1: Fund Data Types ====
+
+- binary digit/bit = smallest unit of memory 
+- memory adresses/ = units memory is organized into 
+- byte = 8 bits operated on as a unit 
+- rf (reference) img folder for learncpp.com beginner-list of fund
+data types 
