@@ -1,0 +1,11 @@
+5.4: The as-if Rule nd Compile-Time Optimization
+
+1. Modular Focus
+a) intro to optimization 
+b) as-if rule 
+c) compile-time evaluation 
+d) further optimization
+e) nomenclature 
+
+2. Key Takeaways 
+- 
