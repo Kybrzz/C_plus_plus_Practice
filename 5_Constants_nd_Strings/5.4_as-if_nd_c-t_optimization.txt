@@ -8,4 +8,25 @@ d) further optimization
 e) nomenclature 
 
 2. Key Takeaways 
-- 
+- optimization = the process of modifying software to make it function 
+more efficiently
+- profiler = a program used to c how long various components of the program r taking 2 run,
+nd which r impacting overall performance 
+- optimizer = a program that optimizes another program
+- as-if rule = compiler can modify a program however it likes, in order 2 produce more 
+optimal code, insofar as the modifications don't affect a program's observable behavior
+- exs. of optimization techniques
+	* loop optimizations
+	** prescient store optimizations
+	*** data-flow optimizations
+	**** SSA-based optimizations
+	***** code generator optimizations
+	****** functional lang. optimizations
+	******* interprocedural optimizations 
+- compile-time evaluation = when the compiler fully or partially evaluates an expression @ compile-time
+- two categories of constants in c++
+	* compile-time constant: 
+		-- a constant whose value is known @ compile-time
+	* runtime constant:
+		-- a constant whose value is determined in a runtime context
+- [[maybe_unused]] b4 constants? 
