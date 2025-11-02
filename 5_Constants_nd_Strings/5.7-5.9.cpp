@@ -63,3 +63,26 @@ int main()
 	
 	return 0;
 } 
+
+/*
+==== 5.9: std::string_view (episode II) ====
+
+1. Modular Focus 
+a) how 2 use std::string_view safely
+b) illustrating how to use it incorrectly 
+c) when 2 use std::string v. std::string_view 
+
+2. Key Takeaways
+- owning is epxensive; viewing is inexpensive 
+	* owning = std::string 
+	** viewing = std::string_view 
+- std::string key info:
+	* avoid initializing nd copying as much as possible 
+	** avoid creating short-lived std::string objs 
+	*** modifying it will invaliate any views to that string 
+	**** ok to return a local std::string by value 
+- std::string_view key info:
+	* typ used 4 passing string func parameters nd returning string vars 
+	** ok to set a std::string_view to a c-string literal 
+	*** may/may not be null-terminated 
+*/ 

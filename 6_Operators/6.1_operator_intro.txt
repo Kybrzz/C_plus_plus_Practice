@@ -1,0 +1,9 @@
+==== 6.1: Operator Precedence nd Associativity ==== 
+
+1. Modular Focus
+a) adding bricks to 1.9: intro to literals nd operators
+b) discuss topics related 2 operators
+c) explore common operators c++ supports 
+
+2. Key Takeaways 
+- 
