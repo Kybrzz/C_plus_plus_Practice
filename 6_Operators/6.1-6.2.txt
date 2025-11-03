@@ -1,0 +1,39 @@
+==== 6.1: Operator Precedence nd Associativity ==== 
+
+1. Modular Focus
+a) adding bricks to 1.9: intro to literals nd operators
+b) discuss topics related 2 operators
+c) explore common operators c++ supports 
+----------------------------------------------------------
+2. Key Takeaways 
+- operation = a mathematicl process involving zero or more operands 
+- operands = input values used in an operation 
+- operator = construct determining the type of operation to b performed 
+- rf img folder for operator precendece table 
+- evaluation = the sequential execution of operands 
+----------------------------------------------------------
+3. List of Operators nd Description
+below is a list of key operators whose function is not immediately known,
+or the most common ones
+	:: = global(unary) or namespace(binary) scope 
+	= = assignment 
+	. = member access from object 
+	-> = member access from object ptr 
+	++ = pre/post increment 
+	-- = pre/post decrement 
+	! = logical NOT 
+	% = remainder 
+	== = equality 
+	!= = inequality 
+	& = bitwise AND
+	^ = bitwise XOR
+	&& = logical AND
+	|| = logical OR
+---------------------------------------------------------
+==== 6.2: Arithmetic Operators ====
+
+1. Modular Focus 
+a) intro to arithmetic operators 
+
+2. Key Takeaways 
+- 
